@@ -7,6 +7,18 @@
     font-style: normal;
   }
 
+  .textContainer {
+    display: inline-block; /* Make the div size adjust based on content */
+    max-width: 200px; /* Set the maximum width for the div */
+    word-wrap: break-word; /* Ensure that long words break into the next line */
+    /* border: 1px solid black; Just for visibility */
+  }
+  
+  ::-webkit-scrollbar {
+   color: black;
+}
+
+
   
   .ibm-plex-mono-thin {
     font-family: "IBM Plex Mono", serif;

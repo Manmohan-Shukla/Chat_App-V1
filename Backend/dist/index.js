@@ -18,6 +18,7 @@ ws.on("connection", (socket) => {
             for (let i = 0; i < allsocket.length; i++) {
                 if (allsocket[i].room == currentuserRoom) {
                     allsocket[i].socket.send(parsedmessage.payload.message);
+                    //  allsocket[i].socket.send(allsocket.length);
                 }
             }
         }
