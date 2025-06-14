@@ -13,7 +13,7 @@ function App() {
   const wsRef = useRef();
   const inputRef = useRef();
   useEffect(() => {
-    const ws = new WebSocket("http://localhost:8080");
+    const ws = new WebSocket("https://chat-app-v1-rj23.vercel.app/");
     ws.onmessage = (event) => {
       setMessage(m => [...m, event.data])
     }
