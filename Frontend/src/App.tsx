@@ -9,7 +9,7 @@ function App() {
   const wsRef = useRef();
   const inputRef = useRef();
   useEffect(() => {
-    const ws = new WebSocket("https://chat-app-v1-rj23.vercel.app/");
+    const ws = new WebSocket("https://chat-app-v1-backend.onrender.com");
     ws.onmessage = (event) => {
       setMessage((m) => [...m, event.data]);
     };
