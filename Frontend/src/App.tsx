@@ -42,7 +42,8 @@ function App() {
         
         </div>
         <div className='text-zinc-600 ibm-plex-mono-medium pl-2 mb-2'>temporary room that expires after all users exit</div>
-        <div className='text-zinc-600 h-10 ibm-plex-mono-medium rounded-lg bg-zinc-900 pl-4 flex items-center '>Room Code: RED<DuplicateIcon/><div></div></div>
+        <div className='text-zinc-600 h-10 ibm-plex-mono-medium
+         rounded-lg bg-zinc-900 pl-4 flex items-center '>Room Code: RED<DuplicateIcon/><div></div></div>
       </div> 
 
 
@@ -52,12 +53,14 @@ function App() {
           {message.map(message =>
             <div className='m-4'>
               <span className='bg-white text-black 
-              px-3 py-2 inline-block rounded-lg mt-0.5 ibm-plex-mono-medium textContainer tracking-widest leading-none ' >{message}
+              px-3 py-2 inline-block rounded-lg mt-0.5 ibm-plex-mono-medium
+               textContainer tracking-widest leading-none ' >{message}
               </span>
             </div>)}
         </div>
         <div className=' flex  align-center '>
-          <div className='w-5/6 mb-4'> <input type='text ' ref={inputRef} id='message' className=' p-2 text-white w-full bg-zinc-900 rounded-md border-zinc-800' placeholder='Type a message ...' />
+          <div className='w-5/6 mb-4'> <input type='text ' ref={inputRef} id='message' className=' p-2 text-white 
+          w-full bg-zinc-900 rounded-md border-zinc-800' placeholder='Type a message ...' />
           </div>
           <div className='w-1/6 mb-4'><Button text="Send" onClick={() => {
             // const message=ref.current.value;
