@@ -52,7 +52,7 @@ const BlinkRoomLanding: React.FC = () => {
             <a href="#" className="nav-link">How it works</a>
             <a href="#" className="nav-link">Rooms</a>
           </div>
-          <button  onClick={() => window.location.href = `${window.location.origin}/Login` }className="btn-launch">Launch Room</button>
+          <button  onClick={() => window.location.href = `${window.location.origin}/dashboard` }className="btn-launch">Launch Room</button>
         </div>
       </nav>
 
@@ -73,7 +73,7 @@ const BlinkRoomLanding: React.FC = () => {
             BlinkRoom creates vanishing digital spaces. No history, no traces — just pure presence. When the last person leaves, the room blinks out of existence.
           </p>
           <div className="hero-buttons">
-            <button onClick={() => window.location.href = `${window.location.origin}/Login` } className="btn-primary">
+            <button onClick={() => window.location.href = `${window.location.origin}/dashboard` } className="btn-primary">
               Start a BlinkRoom <ArrowRight size={20} />
             </button>
             <button className="btn-secondary">
